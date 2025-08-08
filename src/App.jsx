@@ -16,7 +16,7 @@ import Translations from "./screens/translations.jsx";
 function App() {
   return (
     <Router>
-      <div className="xl:w-[30%] lg:w-[50%] md:w-[70%] w-full max-h-screen min-h-screen overflow-hidden flex flex-col justify-between my-0 mx-auto px-0 ">
+      <div className="w-full min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/downloads" element={<Downloads />} />
