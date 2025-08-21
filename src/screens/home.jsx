@@ -174,6 +174,7 @@ function Home() {
         <h1 className="text-5xl md:text-6xl font-serif mt-2">REALIZATION</h1>
         <p className="mt-4 text-lg">You save time with us, health and money</p>
       </section>
+      
       {/* Trust Us */}
       <section className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 flex items-center justify-center p-8">
@@ -193,6 +194,7 @@ function Home() {
           />
         </div>
       </section>
+
       {/* Offers */}
       <section
         className="relative bg-cover bg-center text-center py-32"
@@ -202,6 +204,7 @@ function Home() {
         <h1 className="text-5xl md:text-6xl mt-2">OFFERS</h1>
         <p className="mt-4 text-lg">Explore a wide office formalities</p>
       </section>
+
       {/* Our Offers */}
       <section className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
@@ -218,6 +221,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       {/* Formalities */}
       <section
         className="relative bg-cover bg-center text-center py-32"
@@ -229,6 +233,7 @@ function Home() {
           We’ll do all of them for you formalities and more
         </p>
       </section>
+
       {/* Vehicles */}
       <section className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2">
@@ -247,6 +252,7 @@ function Home() {
           </button>
         </div>
       </section>
+
       {/* Communication */}
       <section className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
@@ -263,6 +269,7 @@ function Home() {
           />
         </div>
       </section>
+
       {/* Contact */}
       <footer className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         <div>
