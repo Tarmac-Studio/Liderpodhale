@@ -15,7 +15,7 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-black text-white">
       {/* Hero Section */}
       <section
         className="min-h-[90vh] w-full bg-cover bg-center bg-no-repeat overflow-x-hidden text-white relative"
@@ -137,27 +137,25 @@ function Home() {
         </ul>
       </nav>
 
-      <section className="bg-black text-white flex px-20 flex-col md:flex-row py-10 gap-15">
-        {/* Left Image with overlay and text */}
-        <div className="relative w-full md:w-1/2 h-[300px]">
-          {/* Image */}
+      <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-15 gap-3">
+        {/* Left Side */}
+        <div className="relative flex-1 h-[300px]">
           <img src={car} alt="Why Us" className="w-full h-full object-cover" />
 
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/60 z-10" />
+          <div className="absolute inset-0 bg-black/70 z-10" />
 
           {/* Text Overlay */}
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
-            {/* Blue line */}
-            <div className="h-[3px] w-50 bg-blue-500 mt-4" />
+            <div className="h-[3px] w-50 bg-[#36B5EB] mt-4" />
             <h2 className="text-8xl font-serif mt-8">Why Us?</h2>
           </div>
         </div>
 
-        {/* Optional Right Side — leave empty or add more content */}
-        <div className="w-full md:w-1/2 hidden md:block justify-center items-center">
-          <div className="bg-[#10101099] p-8 shadow-md max-w-md">
-            <p className="text-lg leading-relaxed text-center">
+        {/* Right Side */}
+        <div className="flex-1 h-[300px] flex justify-center items-center">
+          <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+            <p className="text-xl leading-relaxed text-center max-w-md">
               Lider has been on the market since 2006 and is the first such
               office in this region. In our business, we offer a wide selection
               of motor, property, life and agricultural insurance.
@@ -165,55 +163,96 @@ function Home() {
           </div>
         </div>
       </section>
-      
+
+      {/* Realization */}
       <section
-        className="relative bg-cover bg-center text-white text-center py-32"
+        className="relative bg-cover bg-center text-white text-center py-18 mt-30"
         style={{ backgroundImage: `url(${real})` }}
       >
-        <h4 className="uppercase tracking-widest text-sm">Super Fast</h4>
-        <h1 className="text-5xl md:text-6xl font-serif mt-2">REALIZATION</h1>
-        <p className="mt-4 text-lg">You save time with us, health and money</p>
+        {/* Black overlay (below text) */}
+        <div className="absolute inset-0 bg-black/75 z-0" />
+
+        {/* Text content (above overlay) */}
+        <div className="relative z-10">
+          <h4 className="uppercase tracking-widest text-xl">Super Fast</h4>
+          <h1 className="text-5xl md:text-8xl font-normal mt-2">REALIZATION</h1>
+          <p className="mt-4 font-thin text-lg">
+            You save time with us, health and money
+          </p>
+        </div>
       </section>
-      
+
       {/* Trust Us */}
-      <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-          <div className="max-w-md text-center md:text-left">
-            <p>
-              The LIDER office offers mediation in the registration of vehicles
-              both imported from abroad and purchased in Poland together with
-              the necessary fees in all offices.
+      <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+        <div className="flex-1 h-[300px] flex justify-center items-center">
+          <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+            <p className="text-xl leading-relaxed text-center max-w-md">
+              The "LIDER" office offers mediation in the registration of
+              vehicles both imported from abroad and purchased in Poland
+              together with the necessary fees in all offices.
             </p>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="relative flex-1 h-[300px]">
           <img
             src={house}
-            alt="Trust Us"
+            alt="Why Us"
             className="w-full h-full object-cover"
           />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70 z-10" />
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+            <div className="h-[3px] w-50 bg-[#36B5EB] mt-4" />
+            <h2 className="text-7xl font-serif mt-8">Trust Us</h2>
+          </div>
         </div>
       </section>
 
       {/* Offers */}
       <section
-        className="relative bg-cover bg-center text-center py-32"
+        className="relative bg-cover bg-center text-white text-center py-18 mt-30"
         style={{ backgroundImage: `url(${house2})` }}
       >
-        <h4 className="uppercase tracking-widest text-sm">Attractive</h4>
-        <h1 className="text-5xl md:text-6xl mt-2">OFFERS</h1>
-        <p className="mt-4 text-lg">Explore a wide office formalities</p>
+        {/* Black overlay (below text) */}
+        <div className="absolute inset-0 bg-black/75 z-0" />
+
+        {/* Text content (above overlay) */}
+        <div className="relative z-10">
+          <h4 className="uppercase tracking-widest text-xl">ATTRACTIVE</h4>
+          <h1 className="text-5xl md:text-8xl font-normal mt-2">OFFERS</h1>
+          <p className="mt-4 font-thin text-lg">
+            Explore A wide office formalities{" "}
+          </p>
+        </div>
       </section>
 
       {/* Our Offers */}
-      <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
-          <img src={flags} alt="Flags" className="w-full h-full object-cover" />
+      <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+        {/* Left Side */}
+        <div className="relative flex-1 h-[300px]">
+          <img
+            src={flags}
+            alt="Why Us"
+            className="w-full h-full object-cover"
+          />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70 z-10" />
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+            <div className="h-[3px] w-50 bg-[#36B5EB] mt-4" />
+            <h2 className="text-7xl font-serif mt-8">Our Offers</h2>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-          <div className="max-w-md text-center md:text-left">
-            <h2 className="text-4xl mb-4">Our Offers</h2>
-            <p>
+
+        {/* Right Side */}
+        <div className="flex-1 h-[300px] flex justify-center items-center">
+          <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+            <p className="text-xl leading-relaxed text-center max-w-md">
               Excellent knowledge of foreign languages, careful tracking of all
               linguistic changes is our passion. We guarantee accurate and
               reliable translation, regardless of language and subject!
@@ -224,77 +263,105 @@ function Home() {
 
       {/* Formalities */}
       <section
-        className="relative bg-cover bg-center text-center py-32"
+        className="relative bg-cover bg-center text-white text-center py-18 mt-30"
         style={{ backgroundImage: `url(${plane})` }}
       >
-        <h4 className="uppercase tracking-widest text-sm">Comprehensive</h4>
-        <h1 className="text-5xl md:text-6xl mt-2">FORMALITIES</h1>
-        <p className="mt-4 text-lg">
-          We’ll do all of them for you formalities and more
-        </p>
+        {/* Black overlay (below text) */}
+        <div className="absolute inset-0 bg-black/75 z-0" />
+
+        {/* Text content (above overlay) */}
+        <div className="relative z-10">
+          <h4 className="uppercase tracking-widest text-xl">COMPREHENSIVE</h4>
+          <h1 className="text-5xl md:text-8xl font-normal mt-2">FORMALITIES</h1>
+          <p className="mt-4 font-thin text-lg">
+            We'll do all of them for you formalities and more{" "}
+          </p>
+        </div>
       </section>
 
       {/* Vehicles */}
-      <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
-          <img
-            src={car3}
-            alt="Vehicles"
-            className="w-full h-full object-cover"
-          />
+      <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+        {/* Left Side */}
+        <div className="relative flex-1 h-[300px]">
+          <img src={car3} alt="Why Us" className="w-full h-full object-cover" />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70 z-10" />
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+            <h2 className="text-lg font-thin">REGISTRATION</h2>
+            <h2 className="text-5xl mt-8">VEHICLES</h2>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
-          <p className="mb-4">
-            Check our registration price vehicle in its area
-          </p>
-          <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
-            See Registration Offer
-          </button>
+
+        {/* Right Side */}
+        <div className="flex-1 h-[300px] flex justify-center items-center">
+          <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex flex-col gap-3 items-center justify-center">
+            <p className="text-xl leading-relaxed text-center max-w-md">
+              Check our registration price vehicle in its area
+            </p>
+            <button className="bg-[#162A5D] hover:bg-blue-700 px-8 py-2 rounded-lg">
+              See Registration Offer
+            </button>
+          </div>
         </div>
       </section>
 
       {/* Communication */}
-      <section className="flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
-          <p className="mb-4">Cheap insurance OC and AC</p>
-          <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
-            See Insurance Offer
-          </button>
+      <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+        <div className="flex-1 h-[300px] flex justify-center items-center">
+          <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex flex-col gap-3 items-center justify-center">
+            <p className="text-xl leading-relaxed text-center max-w-md">
+              Cheap insurance OC and AC{" "}
+            </p>
+            <button className="bg-[#162A5D] hover:bg-blue-700 px-8 py-2 rounded-lg">
+              See Insurance Offer
+            </button>
+          </div>
         </div>
-        <div className="w-full md:w-1/2">
-          <img
-            src={comm}
-            alt="Communication"
-            className="w-full h-full object-cover"
-          />
+        <div className="relative flex-1 h-[300px]">
+          <img src={comm} alt="Why Us" className="w-full h-full object-cover" />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/70 z-10" />
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+            <h2 className="text-lg font-thin">INSURANCE</h2>
+            <h2 className="text-4xl mt-8">COMMUNICATION</h2>
+          </div>
         </div>
       </section>
 
       {/* Contact */}
-      <footer className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-        <div>
+      <footer className="text-white mt-30 md:px-2 grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch">
+        {/* Box 1 */}
+        <div className="bg-[#10101099] p-8 h-full">
           <h5 className="text-sm tracking-widest uppercase mb-1">Fast</h5>
-          <h2 className="text-3xl mb-2">Contact</h2>
+          <h2 className="text-5xl uppercase mb-4">Contact</h2>
           <p className="text-sm">
             Do you want to use our services?
             <br />
             Do you have additional questions?
           </p>
         </div>
-        <div>
+
+        {/* Box 2 */}
+        <div className="bg-[#10101099] p-8 h-full">
           <p>
             +48 662 969 662
-            <br />
-            (New Market)
+            <br />( New Market )
           </p>
-          <p className="mt-2">
+          <p className="mt-4">
             +48 887 770 774
-            <br />
-            (Białka Tatrzańska)
+            <br />( Białka Tatrzańska )
           </p>
         </div>
-        <div className="flex items-center justify-center md:justify-end">
-          <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
+
+        {/* Box 3 */}
+        <div className="bg-[#10101099] p-8 h-full flex items-center justify-center md:px-2">
+          <button className="bg-[#162A5D] hover:bg-blue-700 px-6 py-2 rounded-lg">
             REACH OUT TO US
           </button>
         </div>

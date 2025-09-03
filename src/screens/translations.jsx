@@ -128,24 +128,29 @@ function translations() {
         </nav>
 
         <section
-          className="relative bg-cover bg-center text-white text-center py-20 mt-10"
-          style={{
-            backgroundImage: `url(${mercedes})`,
-            width: "100%",
-            height: "300px",
-          }}
+          className="relative bg-cover bg-center text-white text-center py-18 mt-15"
+          style={{ backgroundImage: `url(${mercedes})` }}
         >
-          <h4 className="uppercase tracking-widest text-sm">PROFESSIONAL</h4>
-          <h1 className="text-5xl md:text-6xl font-serif mt-2">TRANSLATIONS</h1>
-          <p className="mt-4 text-lg">
-            Quality guarantee for translators documents
-          </p>
+          {/* Black overlay (below text) */}
+          <div className="absolute inset-0 bg-black/75 z-0" />
+
+          {/* Text content (above overlay) */}
+          <div className="relative z-10">
+            <h4 className="uppercase tracking-widest text-xl">PROFESSIONAL</h4>
+            <h1 className="text-5xl md:text-8xl font-normal mt-2">
+              TRANSLATIONS
+            </h1>
+            <p className="mt-4 font-thin text-lg">
+              Quality guarantee for translators documents{" "}
+            </p>
+          </div>
         </section>
 
-        <section className="flex flex-col md:flex-row h-100">
-          <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-            <div className="max-w-md text-center md:text-left">
-              <p>
+        <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+          {/* Left Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
                 Years of experience have enabled us to provide you with the
                 certainty of a perfect translation. By providing us with texts
                 you receive their most faithful translation into any language
@@ -153,9 +158,11 @@ function translations() {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-            <div className="max-w-md text-center md:text-left">
-              <p>
+
+          {/* Right Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
                 Excellent knowledge of foreign languages, careful tracking of
                 all linguistic changes is our passion. We guarantee accurate and
                 reliable translation, regardless of language and subject!
@@ -165,81 +172,113 @@ function translations() {
         </section>
 
         <section
-          className="relative bg-cover bg-center text-white text-center py-20 mt-10"
-          style={{
-            backgroundImage: `url(${mustang})`,
-            width: "100%",
-            height: "300px",
-          }}
+          className="relative bg-cover bg-center text-white text-center py-18 mt-30"
+          style={{ backgroundImage: `url(${mustang})` }}
         >
-          <h4 className="uppercase tracking-widest text-sm">PROFESSIONAL</h4>
-          <h1 className="text-5xl md:text-6xl font-serif mt-2">TRANSLATIONS</h1>
-          <p className="mt-4 text-lg">
-            Quality guarantee for translators documents
-          </p>
+          {/* Black overlay (below text) */}
+          <div className="absolute inset-0 bg-black/75 z-0" />
+
+          {/* Text content (above overlay) */}
+          <div className="relative z-10">
+            <h4 className="uppercase tracking-widest text-xl">LOW</h4>
+            <h1 className="text-5xl md:text-8xl font-normal mt-2">PRICES</h1>
+            <p className="mt-4 font-thin text-lg">
+              The best prices on the market translations{" "}
+            </p>
+          </div>
         </section>
 
         {/* Vehicles */}
-        <section className="flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2">
+        <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+          {/* Left Side */}
+          <div className="relative flex-1 h-[300px]">
             <img
               src={car3}
-              alt="Vehicles"
+              alt="Why Us"
               className="w-full h-full object-cover"
             />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/70 z-10" />
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+              <h2 className="text-lg font-thin">REGISTRATION</h2>
+              <h2 className="text-5xl mt-8">VEHICLES</h2>
+            </div>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
-            <p className="mb-4">
-              Check our registration price vehicle in its area
-            </p>
-            <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
-              See Registration Offer
-            </button>
+
+          {/* Right Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex flex-col gap-3 items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
+                Check our registration price vehicle in its area
+              </p>
+              <button className="bg-[#162A5D] hover:bg-blue-700 px-8 py-2 rounded-lg">
+                See Registration Offer
+              </button>
+            </div>
           </div>
         </section>
 
         {/* Communication */}
-        <section className="flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-8">
-            <p className="mb-4">Cheap insurance OC and AC</p>
-            <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
-              See Insurance Offer
-            </button>
+        <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex flex-col gap-3 items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
+                Cheap insurance OC and AC{" "}
+              </p>
+              <button className="bg-[#162A5D] hover:bg-blue-700 px-8 py-2 rounded-lg">
+                See Insurance Offer
+              </button>
+            </div>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="relative flex-1 h-[300px]">
             <img
               src={comm}
-              alt="Communication"
+              alt="Why Us"
               className="w-full h-full object-cover"
             />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/70 z-10" />
+
+            {/* Text Overlay */}
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+              <h2 className="text-lg font-thin">INSURANCE</h2>
+              <h2 className="text-4xl mt-8">COMMUNICATION</h2>
+            </div>
           </div>
         </section>
 
         {/* Contact */}
-        <footer className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div>
+        <footer className="text-white mt-30 md:px-2 grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch">
+          {/* Box 1 */}
+          <div className="bg-[#10101099] p-8 h-full">
             <h5 className="text-sm tracking-widest uppercase mb-1">Fast</h5>
-            <h2 className="text-3xl mb-2">Contact</h2>
+            <h2 className="text-5xl uppercase mb-4">Contact</h2>
             <p className="text-sm">
               Do you want to use our services?
               <br />
               Do you have additional questions?
             </p>
           </div>
-          <div>
+
+          {/* Box 2 */}
+          <div className="bg-[#10101099] p-8 h-full">
             <p>
               +48 662 969 662
-              <br />
-              (New Market)
+              <br />( New Market )
             </p>
-            <p className="mt-2">
+            <p className="mt-4">
               +48 887 770 774
-              <br />
-              (Białka Tatrzańska)
+              <br />( Białka Tatrzańska )
             </p>
           </div>
-          <div className="flex items-center justify-center md:justify-end">
-            <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
+
+          {/* Box 3 */}
+          <div className="bg-[#10101099] p-8 h-full flex items-center justify-center md:px-2">
+            <button className="bg-[#162A5D] hover:bg-blue-700 px-6 py-2 rounded-lg">
               REACH OUT TO US
             </button>
           </div>

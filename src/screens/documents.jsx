@@ -6,8 +6,8 @@ import real from "../assets/Images/real.jpg";
 
 function documents() {
   return (
-    <div>
-      <div className="bg-black text-white font-serif">
+    <div className="w-full bg-black">
+      <div className="bg-black text-white">
         {/* Header */}
         <header
           className="relative bg-cover bg-center h-[300px] text-white flex flex-col justify-center items-center text-center"
@@ -30,8 +30,6 @@ function documents() {
           </h4>
           <h1 className="absolute text-5xl md:text-6xl mt-30">DOCUMENTS</h1>
         </header>
-
-        {/* <ul className="flex flex-wrap justify-center space-x-6 py-4 text-sm md:text-base"> */}
 
         {/* Navbar Section */}
         <nav className="w-full bg-[#162A5D] py-6 px-20">
@@ -124,11 +122,11 @@ function documents() {
         </nav>
 
         <section
-          className="relative bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center px-4"
+          className="relative bg-cover bg-center h-[400px] mt-15 flex flex-col justify-center items-center text-center"
           style={{ backgroundImage: `url(${real})` }}
         >
           {/* Overlay for darkening */}
-          {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+          <div className="absolute inset-0 bg-black/70 z-0" />
 
           {/* Content */}
           <div className="relative z-10 max-w-3xl">
@@ -161,6 +159,8 @@ function documents() {
             </div>
           </div>
         </section>
+
+        <section className="bg-black py-30"></section>
       </div>
     </div>
   );

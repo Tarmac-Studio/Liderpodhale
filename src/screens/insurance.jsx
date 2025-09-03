@@ -10,7 +10,7 @@ import trusted from "../assets/Images/trusted.png";
 function insurance() {
   return (
     <div>
-      <div className="bg-black text-white font-serif">
+      <div className="bg-black text-white">
         {/* Header */}
         <header
           className="relative bg-cover bg-center h-[300px] text-white flex flex-col justify-center items-center text-center"
@@ -128,21 +128,23 @@ function insurance() {
         </nav>
 
         <section
-          className="relative bg-cover bg-center text-white text-center py-32"
+          className="relative bg-cover bg-center text-white text-center py-18 mt-15"
           style={{
             backgroundImage: `url(${insuranceCar})`,
-            width: "100%",
-            height: "400px",
           }}
         >
-          <h4 className="uppercase tracking-widest text-sm">LOW PRICE</h4>
-          <h1 className="text-5xl md:text-6xl font-serif mt-2">INSURANCE</h1>
+          <div className="absolute inset-0 bg-black/75 z-0" />
+
+          {/* Text content (above overlay) */}
+          <div className="relative z-10">
+            <h4 className="uppercase tracking-widest text-xl">LOW PRICE</h4>
+            <h1 className="text-5xl md:text-8xl font-normal mt-2">INSURANCE</h1>
+          </div>
         </section>
 
-        <section className="bg-black text-white flex px-20 flex-col md:flex-row py-10 gap-15">
-          {/* Left Image with overlay and text */}
-          <div className="relative w-full md:w-1/2 h-[300px]">
-            {/* Image */}
+        <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+          {/* Left Side */}
+          <div className="relative flex-1 h-[300px]">
             <img
               src={car}
               alt="Why Us"
@@ -150,32 +152,32 @@ function insurance() {
             />
 
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/60 z-10" />
+            <div className="absolute inset-0 bg-black/70 z-10" />
 
             {/* Text Overlay */}
             <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
-              {/* Blue line */}
-              <div className="h-[3px] w-50 bg-blue-500 mt-4" />
-              <h2 className="text-8xl font-serif mt-8">Why Us?</h2>
+              <div className="h-[3px] w-50 bg-[#36B5EB] mt-4" />
+              <h2 className="text-8xl mt-8">Why Us?</h2>
             </div>
           </div>
 
-          {/* Optional Right Side — leave empty or add more content */}
-          <div className="w-full md:w-1/2 hidden md:block justify-center items-center">
-            <div className="bg-[#10101099] p-8 shadow-md max-w-md">
-              <p className="text-lg leading-relaxed text-center">
-                Lider has been on the market since 2006 and is the first such
-                office in this region. In our business, we offer a wide
-                selection of motor, property, life and agricultural insurance.
+          {/* Right Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
+                All risks, i.e. insurance against all risks - AC insurance
+                covers damage to the vehicle, its destruction or loss due to all
+                events.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row h-100">
-          <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-            <div className="max-w-md text-center md:text-left">
-              <p>
+        <section className="bg-black text-white flex flex-col md:flex-row px-20 mt-30 gap-3">
+          {/* Left Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
                 The subject of insurance is the civil liability of any person
                 who, while driving a motor vehicle during the duration of the
                 insurance contract, caused damage in connection with the
@@ -183,9 +185,11 @@ function insurance() {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex items-center justify-center p-8">
-            <div className="max-w-md text-center md:text-left">
-              <p>
+
+          {/* Right Side */}
+          <div className="flex-1 h-[300px] flex justify-center items-center">
+            <div className="bg-[#10101099] p-8 shadow-md w-full h-full flex items-center justify-center">
+              <p className="text-xl leading-relaxed text-center max-w-md">
                 “ Lider "offers you the best offers on the market of known
                 insurance companies. We guarantee the greatest professionalism
                 and advice regarding vehicle insurance.
@@ -196,17 +200,24 @@ function insurance() {
 
         {/* Offers */}
         <section
-          className="relative bg-cover bg-center text-center py-32"
-          style={{ backgroundImage: `url(${house2})` }}
+          className="relative bg-cover bg-center text-white text-center py-18 mt-30"
+          style={{
+            backgroundImage: `url(${house2})`,
+          }}
         >
-          <h4 className="uppercase tracking-widest text-sm">BEST</h4>
-          <h1 className="text-5xl md:text-6xl mt-2">OFFERS</h1>
-          <p className="mt-4 text-lg">
-            Cooperation with the best societies Insurance
-          </p>
+          <div className="absolute inset-0 bg-black/75 z-0" />
+
+          {/* Text content (above overlay) */}
+          <div className="relative z-10">
+            <h4 className="uppercase tracking-widest text-xl">BEST</h4>
+            <h1 className="text-5xl md:text-8xl font-normal mt-2">OFFERS</h1>
+            <p className="mt-4 font-thin text-lg">
+              Cooperation with the best societies Insurance{" "}
+            </p>
+          </div>
         </section>
 
-        <section className="bg-black text-white flex px-20 flex-col md:flex-row py-20 gap-15">
+        <section className="bg-black text-white flex px-20 flex-col md:flex-row mt-30">
           {/* Left Image with overlay and text */}
           <div className="relative w-full h-100%">
             {/* Image */}
@@ -219,30 +230,33 @@ function insurance() {
         </section>
 
         {/* Contact */}
-        <footer className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div>
+        <footer className="text-white mt-30 md:px-2 grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch">
+          {/* Box 1 */}
+          <div className="bg-[#10101099] p-8 h-full">
             <h5 className="text-sm tracking-widest uppercase mb-1">Fast</h5>
-            <h2 className="text-3xl mb-2">Contact</h2>
+            <h2 className="text-5xl uppercase mb-4">Contact</h2>
             <p className="text-sm">
               Do you want to use our services?
               <br />
               Do you have additional questions?
             </p>
           </div>
-          <div>
+
+          {/* Box 2 */}
+          <div className="bg-[#10101099] p-8 h-full">
             <p>
               +48 662 969 662
-              <br />
-              (New Market)
+              <br />( New Market )
             </p>
-            <p className="mt-2">
+            <p className="mt-4">
               +48 887 770 774
-              <br />
-              (Białka Tatrzańska)
+              <br />( Białka Tatrzańska )
             </p>
           </div>
-          <div className="flex items-center justify-center md:justify-end">
-            <button className="bg-blue-800 hover:bg-blue-700 px-6 py-2 rounded">
+
+          {/* Box 3 */}
+          <div className="bg-[#10101099] p-8 h-full flex items-center justify-center md:px-2">
+            <button className="bg-[#162A5D] hover:bg-blue-700 px-6 py-2 rounded-lg">
               REACH OUT TO US
             </button>
           </div>

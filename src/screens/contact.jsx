@@ -7,7 +7,7 @@ import map from "../assets/Images/map.png";
 function contact() {
   return (
     <div>
-      <div className="bg-black text-white font-serif">
+      <div className="bg-black text-white">
         {/* Header */}
         <header
           className="relative bg-cover bg-center h-[300px] text-white flex flex-col justify-center items-center text-center"
@@ -123,7 +123,11 @@ function contact() {
         <section
           className="relative bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center px-4"
           style={{ backgroundImage: `url(${map})` }}
-        ></section>
+        >
+          <div className="absolute inset-0 bg-black/70 z-0" />
+        </section>
+
+        <section className="bg-black py-37"></section>
       </div>
     </div>
   );

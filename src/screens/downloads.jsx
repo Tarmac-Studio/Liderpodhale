@@ -5,7 +5,6 @@ import write from "../assets/Images/write.jpg";
 import logo from "../assets/Images/logo.png";
 import { NavLink } from "react-router-dom";
 
-
 function downloads() {
   const documents = [
     "Polish–English agreement",
@@ -25,7 +24,7 @@ function downloads() {
   ];
 
   return (
-    <div className="bg-black text-white font-serif">
+    <div className="bg-black text-white">
       {/* Header */}
       <header
         className="relative bg-cover bg-center h-[300px] text-white flex flex-col justify-center items-center text-center"
@@ -154,31 +153,34 @@ function downloads() {
         ))}
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black text-white py-12 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-        <div>
+      {/* Contact */}
+      <footer className="text-white mt-30 md:px-2 grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch">
+        {/* Box 1 */}
+        <div className="bg-[#10101099] p-8 h-full">
           <h5 className="text-sm tracking-widest uppercase mb-1">Fast</h5>
-          <h2 className="text-3xl mb-2">Contact</h2>
+          <h2 className="text-5xl uppercase mb-4">Contact</h2>
           <p className="text-sm">
             Do you want to use our services?
             <br />
             Do you have additional questions?
           </p>
         </div>
-        <div>
+
+        {/* Box 2 */}
+        <div className="bg-[#10101099] p-8 h-full">
           <p>
             +48 662 969 662
-            <br />
-            (New Market)
+            <br />( New Market )
           </p>
-          <p className="mt-2">
+          <p className="mt-4">
             +48 887 770 774
-            <br />
-            (Białka Tatrzańska)
+            <br />( Białka Tatrzańska )
           </p>
         </div>
-        <div className="flex items-center justify-center md:justify-end">
-          <button className="bg-[#162A5D]  cursor-pointer px-6 py-2 rounded">
+
+        {/* Box 3 */}
+        <div className="bg-[#10101099] p-8 h-full flex items-center justify-center md:px-2">
+          <button className="bg-[#162A5D] hover:bg-blue-700 px-6 py-2 rounded-lg">
             REACH OUT TO US
           </button>
         </div>
